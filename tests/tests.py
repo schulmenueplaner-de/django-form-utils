@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+import six
 import django
+
 from django import forms
 from django import template
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.db.models.fields.files import (
     FieldFile, ImageFieldFile, FileField, ImageField)
 from django.test import TestCase
-from django.utils import six
 
 from mock import patch
 
